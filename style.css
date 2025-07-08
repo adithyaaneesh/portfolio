@@ -38,7 +38,8 @@
 .menu-items button{
     background: var(--primary-text-color);
     border: 4px solid var(--primary-color);
-    border-radius: 30px;
+    border-radius: 15px;
+    padding: 4px 4px;
 }
 .logo img{
     max-width: 100px;
@@ -203,6 +204,11 @@
     justify-content: center;
     gap: 43px;
 }
+.img-content + div {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
 .pf + div p:hover{
     color: white;
 }
@@ -234,12 +240,13 @@ div input {
     border-right: 0;
   }
 div textarea{
+    resize: none;
     margin-top: 30px;
     border: 4px solid;
     border-top: 0;
     border-right: 0;
 }
-.form button{
+form > button{
     display: flex;
     justify-content: center;
     background:none;
@@ -248,9 +255,11 @@ div textarea{
     border-bottom-style: none;
     border-left-style:solid;
     border-right-style:solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-form:active{
-    color: none;
+form:visited{
+    color:white;
 }
 .foot{
     background-color: #1D1D1D;
@@ -270,4 +279,28 @@ form:active{
 .foot p{
     color: white;
     margin-top: 30px;
+}
+@media screen and (max-width:550px) {
+    .skill-list h4 {
+        text-align: center;
+    }
+}
+@media screen and (max-width:550px) {
+    .skill-list div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:600px) {
+    .menu-items {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:700px){
+    #profile img {
+        float: left;
+        max-width: 100%;
+        min-height: 100%;
+    }
+    
 }
