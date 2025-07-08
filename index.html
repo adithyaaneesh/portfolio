@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<script>
+    function themeHandler(theme) {
+        const root = document.querySelector(':root')
+        if (theme === 'light') {
+            root.style.setProperty('--primary-color', 'white')
+            root.style.setProperty('--primary-text-color','black')
+
+        } else if (theme === 'dark') {
+            root.style.setProperty('--primary-color', 'black')
+            root.style.setProperty('--primary-text-color','white')
+            
+        }
+    }
+
+        themeHandler()
+</script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <ul class="menu-items">
+                    <li><a href="aboutme">About me</a></li>
+                    <li><a href="skills">Skills</a></li>
+                    <li><a href="portfolio">Portfolio</a></li>
+                    <button>CONTACT ME</button>
+                    <button onclick="themeHandler('light')">Light</button>
+                    <button onclick="themeHandler('dark')">Dark</button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="profile">
+            <div class="bg container">
+                <div class="details">
+                    <h3>Hi,I am</h3>
+                    <h1>Adithya C</h1>
+                    <p>Front-end Developer</p>
+                </div>
+                <div class="blackbox">
+                    <img src="./assets/blackbox.jpg">
+                </div>
+            </div>
+        </section>
+        <section id="it-berries">
+            <div class="berries container">
+                <h1>IT BERRIES</h1>
+                <p>At ITberries, we design and develop websites and web applications. Apart from the projects, our biggest undertaking is the Ciemna Strona UX conference, which we are organizing for the sixth time. Working in a club as a Front-End Developer definitely developed my skills in group work and working under time pressure. If you want to know more about us, click the button below!</p>
+                <button>READ MORE</button>
+            </div>
+        </section>
+        <section id="aboutme">
+            <div class="section-align container">
+                <div class="section-head">
+                    <h2>ABOUT ME</h2>
+                </div>
+                <div class="about-para">
+                    <p>My name is Adithya, I'm doing an internship in python full stack at maitexa technologies ,Calicut .I have been learning Front-End technologies for a month and this time was just enough for me to make sure that this is my place in the industry.
+                       Trying out new figma design developed my design skills, which quickly turned into a new hobby.</p>
+                </div>
+                <button>EXPLORE</button>
+            </div>
+        </section>
+        <section>
+            <div class="seperate">
+                <img src="./assets/seperator.jpg">
+            </div>
+        </section>
+
+        <section id="service">
+            <div class="container">
+                <div class="service-row1">
+                    <div>
+                        <h3>DESIGN</h3>
+                        <p>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
+                    </div>
+                    <div>
+                        <h3>DEVELOPMENT</h3>
+                        <p>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
+                    </div>
+                </div>
+                <div class="service-row2">
+                    <div>
+                        <h3>MAINTENANCE</h3>
+                        <p>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
+                    </div>
+                </div>
+                    
+            </div>
+        </section>
+        <section>
+            <div class="seperate">
+                <img src="./assets/seperator.jpg">
+            </div>
+        </section>
+        <section id="skills" class="container">
+            <div class="section-align">
+                <div class="section-head">
+                    <h2>SKILLS</h2>
+                </div>
+            </div>
+            <div class="skill-list container">
+                <h4>USING NOW:</h4>
+                <div>
+                    <figure class="html"><img src="./assets/html5.svg"><p>HTML5</p></figure>                   
+                    <figure class="css"><img src="./assets/css3.svg"><p>CSS3</p></figure>                   
+                    <figure class="js"><img src="./assets/js.svg"><p>JAVA SCRIPT</p></figure>
+                    <figure class="r"><img src="./assets/react.svg"><p>REACT</p></figure>
+                    <figure class="git"><img src="./assets/git.svg"><p>GIT</p></figure>
+                    <figure class="fig"><img src="./assets/figma.svg"><p>FIGMA</p></figure>
+                </div>
+                <h4>LEARNING:</h4>
+                <div>
+                    <figure class="node"><img src="./assets/node.svg"><p>NODEJS</p></figure>                   
+                    <figure class="sql"><img src="./assets/sql.svg"><p>MySQL</p></figure>                   
+                </div>
+                <h4>OTHER SKILLS:</h4>
+                <div>
+                    <figure class="cpp"><img src="./assets/cpp.svg"><p>C++</p></figure>                    
+                    <figure class="c"><img src="./assets/c.svg"><p>C</p></figure>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="pf-img ">
+                <div class="pf ">
+                    <h2>PORTFOLIO</h2>
+                </div>
+                <div class="textp container">
+                    <p>ALL</p>
+                    <p>CODED</p>
+                    <p>DESIGNED</p>
+                </div>
+                <div class="img-content container">
+                    <div>
+                        <img src="./assets/rec1.jpg">
+                    </div>
+                    <div>
+                        <img src="./assets/rec2t.png">
+                    </div>
+                    <div>
+                        <img src="./assets/rec3.jpg">
+                    </div>
+                    <div>
+                        <img src="./assets/rec4.jpg">
+                    </div>
+                    <div>
+                        <img src="./assets/rec5.jpg">
+                    </div>
+                    <div>
+                        <img src="./assets/rec6.jpg">
+                    </div>                  
+                </div>
+                <div class="final-p">
+                    <p>And many more to come!</p>
+                </div>
+            </div>
+        </section>
+        <section id="final">
+            <div class="section-align container">
+                <div class="section-head">
+                    <h2>CONTACT</h2>
+                </div>
+                <div>
+                    <p>Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.</p>
+                </div>
+            </div>
+            <div class="seperate">
+                <img src="./assets/seperator.jpg">
+            </div>
+            <div class="form container">
+                <form>
+                    <div>
+                        <input type="text" id="name" placeholder="ENTER YOUR NAME*" required>
+                    </div>
+                    <div>
+                        <input type="email" id="email" placeholder="ENTER YOUR EMAIL*" required>
+                    </div>
+                    <div>
+                        <input type="number" id="num" placeholder="ENTER YOUR PHONE NUMBER">
+                    </div>
+                    <div>
+                        <textarea id="msg" name="message" placeholder="YOUR MESSAGE*"></textarea>
+                    </div>
+                    <button>SUBMIT</button>
+                </form>
+            </div>
+        </section>       
+    </main>
+    <footer>
+        <div class="foot container">
+            <a href="#"><img src="./assets/arrow.svg"></a>
+            <h5>BACK TO TOP</h5>
+            <div class="icon">
+                <a href="#"><img src="./assets/fb.svg"></a>
+                <a href="#"><img src="./assets/linked.svg"></a>
+                <a href="#"><img src="./assets/inst.svg"></a>
+                <a href="#"><img src="./assets/mail.svg"></a>
+            </div>
+            <p>@2025 Adithya C All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
