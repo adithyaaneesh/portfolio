@@ -71,7 +71,6 @@
     font-weight: 300px;
     font-size: 24px;
 }
-
 #it-berries{
     margin: 0 auto;
     background-image: url(./assets/it.jpg);
@@ -207,15 +206,6 @@
 .pf + div p:hover{
     color: white;
 }
-.pf-img button{
-    color: white;
-    background:none;
-    border: 1px;
-    border-top-style: none;
-    border-bottom-style: none;
-    border-left-style:solid;
-    border-right-style:solid;
-}
 #portfolio img {
     width: 100%;
 } 
@@ -258,6 +248,9 @@ div textarea{
     border-bottom-style: none;
     border-left-style:solid;
     border-right-style:solid;
+}
+form:active{
+    color: none;
 }
 .foot{
     background-color: #1D1D1D;
